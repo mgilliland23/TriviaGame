@@ -49,7 +49,7 @@ function startTimer() {
 
 function displayTimer() {
   if (time === 0) {
-    alert("Times Up!");
+    alert("Times up! The answer is: " + $("#correctAns").text());
     incorrectCount += 1;
     nextQuestion();
   }
@@ -102,7 +102,7 @@ function checkAnswer() {
     correctCount += 1;
     nextQuestion();
   } else {
-    alert("Wrong!");
+    alert("Wrong! The answer is: " + $("#correctAns").text());
     incorrectCount += 1;
     nextQuestion();
   }
